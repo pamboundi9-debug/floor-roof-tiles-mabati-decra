@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floor Tiles, Roofing Tiles & Steel Doors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url('https://copilot.microsoft.com/th/id/BCO.3ff12216-019c-4936-af7f-7a412fe56a3c.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: rgba(85, 85, 85, 0.9);
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #777;
+    }
+    section {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 20px;
+      border-radius: 8px;
+    }
+    .tile-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .tile-card {
+      flex: 1;
+      min-width: 200px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .tile-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Floor Tiles, Roofing Tiles & Steel Doors</h1>
+    <p>Quality Products for Every Home</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>We specialize in high-quality floor tiles, Decra roofing tiles, steel doors, and durable mabati. Visit us at Imara Mall, Mombasa Road for the best deals and expert advice.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Founded by Rose Orang'o, our business is built on trust, quality, and customer satisfaction. We offer a wide range of stylish and durable products for both roofing and flooring needs.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Products</h2>
+    <ul>
+      <li>Floor Tiles – Ceramic, Porcelain, and Stone</li>
+      <li>Roofing Tiles – Decra and other premium brands</li>
+      <li>Mabati – Corrugated and box profile sheets</li>
+      <li>Steel Doors – Security and decorative styles</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Product Gallery</h2>
+    <input type="text" id="tileSearch" placeholder="Search products..." onkeyup="filterTiles()" />
+
+    <h3>Living Room Tiles</h3>
+    <div class="tile-grid">
+      <div class="tile-card">
+        <img src="https://cdn.trendir.com/wp-content/uploads/old/archives/assets_c/2015/09/living-room-flooring-tile-stone-look-fosil-ng-kutahya-thumb-1600xauto-56248.jpg" alt="Living Room Floor Tile" />
+        <p>Stone-Look Tile – KSh 2,500/box</p>
+      </div>
+    </div>
+
+    <h3>Bathroom Tiles</h3>
+    <div class="tile-grid">
+      <div class="tile-card">
+        <img src="https://www.tileideaz.com/wp-content/uploads/2015/11/farmhouse-bathroom-design-with-natural-ceramic-floor-and-white-bathtub-tiles.jpg" alt="Bathroom Floor Tile" />
+        <p>Natural Ceramic Tile – KSh 1,200/box</p>
+      </div>
+    </div>
+
+    <h3>Outdoor Tiles</h3>
+    <div class="tile-grid">
+      <div class="tile-card">
+        <img src="https://mydecorative.com/wp-content/uploads/2018/09/Outdoor-Floor-Tiles-1068x1068.jpg" alt="Outdoor Floor Tile" />
+        <p>Textured Outdoor Tile – KSh 1,600/box</p>
+      </div>
+    </div>
+
+    <h3>Steel Doors</h3>
+    <div class="tile-grid">
+      <div class="tile-card">
+        <img src="https://steeldoorskenya.com/images/home12.jpg" alt="Steel Door Kenya" />
+        <p>Heavy-Duty Steel Door – KSh 27,000</p>
+      </div>
+      <div class="tile-card">
+        <img src="https://steeldoorskenya.com/images/home13.jpg" alt="Security Door Kenya" />
+        <p>Security Door with Frame – KSh 36,000</p>
+      </div>
+    </div>
+
+   
+    <h3>roofing tiles Gauge Comparison</h3>
+<div class="tile-grid">
+  <div class="tile-card">
+    <img src="https://signaturemabati.co.ke/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-21.24.27-1.jpeg" alt="Gauge 26 tiles" />
+    <p>Gauge 26 roofing tiles – Thicker and more durable -ksh 660/sheet</p>
+  </div>
+  
+    
+<h3>Mabati Gauge Comparison</h3>
+<div class="tile-grid">
+  <div class="tile-card">
+    <img src="https://signaturemabati.co.ke/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-21.24.27-1.jpeg" alt="Gauge 26 tiles" />
+    <p><strong>Gauge 26 roofing tiles</strong><br>Thicker and more durable – KSh 660/sheet</p>
+  </div>
+  <div class="tile-card">
+    <img src="https://signaturemabati.co.ke/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-10-at-21.24.27.jpeg" alt="Gauge 30 Mabati" />
+    <p><strong>Gauge 30 Mabati</strong><br>Lighter and more economical – KSh 650/sheet</p>
+  </div>
+</div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Location:</strong> Imara Mall, Mombasa Road</p>
+    <p><strong>Phone/WhatsApp:</strong> 0727 213 169</p>
+    <p><strong>Email:</strong> <a href="mailto:roseorango@gmail.com">roseorango@gmail.com</a></p>
+    <iframe
+      src="https://www.google.com/maps?q=Imara+Mall+Mombasa+Road&output=embed"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Floor Tiles and Roofing Tiles (Decra). All rights reserved.</p>
+<p>
+  Visit our <a href="https://www.facebook.com/Roofing materials company" target="_blank">Facebook Page</a> for updates and offers!
+</p>
+
+ 
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a
+    href="https://wa.me/254727213169"
+    style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"
+    target="_blank"
+  >
+    Chat with Rose 💬
+  </a>
+
+  <script>
+    function filterTiles() {
+      const input = document.getElementById('tileSearch').value.toLowerCase();
+      const cards = document.querySelectorAll('.tile-card');
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
